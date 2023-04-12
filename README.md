@@ -1,6 +1,10 @@
 # This bot
 A mostly self contained discord bot which can log Twitter accounts into any channel.
 
+I can seriously argue this is the best Twitter logging bot in all of Discord, as it doesn't simply
+repost links and hope for the best. This tracks threads, so when tweets are deleted, you can fetch it
+from the depths of the internet.
+
 ## Contents
 - [This bot](#This-bot)
   - [Features](#Features)
