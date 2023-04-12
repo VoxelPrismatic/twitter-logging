@@ -9,13 +9,6 @@ from the depths of the internet.
 - [This bot](#This-bot)
   - [Features](#Features)
 - [Set up](#Set-up)
-- [Customization](#Customization)
-  - [Creating Twitter API keys](#Creating-Twitter-API-keys)
-  - [Tweeters](#Tweeters)
-  - [Discord bot token](#Discord-bot-token)
-  - [Twitter link grabbing](#Twitter-link-grabbing)
-  - [Tweet timeout](#Tweet-timeout)
-  - [Other notes](#Other-notes)
 - [Licensing](#Licensing)
 
 ## Features
