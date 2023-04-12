@@ -71,5 +71,5 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 View full license under [LICENSE](https://github.com/VoxelPrismatic/twitter-logging/blob/master/LICENSE)
 
 # Support
-Support my work by exploring my [other projects](https://voxelprismatic.github.io/#comptelec) and
+Support my work by exploring my [other projects](https://voxelprismatic.github.io/) and
 donating via [Cash App](https://cash.app/$VoxelPrismatic) or [Patreon](https://patreon.com/VoxelPrismatic)
