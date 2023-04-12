@@ -12,7 +12,7 @@ A mostly self contained discord bot which can log Twitter accounts into any chan
   - [Twitter link grabbing](#Twitter-link-grabbing)
   - [Tweet timeout](#Tweet-timeout)
   - [Other notes](#Other-notes)
-- [
+- [Licensing](#Licensing)
 
 ## Features
 - Saves video
