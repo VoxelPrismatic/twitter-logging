@@ -196,7 +196,7 @@ async def get_video(data, url):
                 proc = subprocess.Popen(["ffmpeg", *stream_loop, "-i", f"./tw-cache/{view_key}.mp4", *ffmpeg_args(sz), f"./tw-cache/{view_key}.webm", "-y"])
                 await asyncio.sleep(0.5)
             await asyncio.sleep(0.1)
-    os.remove(f"./tw-cache/{view_key}.mp4")
+        os.remove(f"./tw-cache/{view_key}.mp4")
     if os.stat(f"./tw-cache/{view_key}.webm").st_size > 1024 * 1024 * 24:
         return data["includes"]["media"][0]["preview_image_url"]
 
@@ -216,7 +216,9 @@ async def get_image(sfw_embed, nsfw_embed, data, depth = 0):
             except KeyError as ex:
                 return
             except Exception as ex:
-                print("\n\n\n\x1b[91;1m", ex, "\x1b[0m\n\n\n")
+                print("\x1b[91;1mError in `get_image()':")
+                traceback.print_exception(type(ex), ex, ex.__traceback__)
+                print("\x1b[0m")
                 return
     if not data["data"]["possibly_sensitive"]:
         sfw_embed.set_image(url = url)
