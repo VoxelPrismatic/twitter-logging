@@ -180,7 +180,7 @@ async def get_video(data, url):
         proc = subprocess.Popen(["ffmpeg", *stream_loop, "-i", f"./tw-cache/{view_key}.mp4", *ffmpeg_args(sz), f"./tw-cache/{view_key}.webm", "-y"])
         print(proc.args)
         while proc.poll() is None:
-            if os.path.exists(f"./tw-cache/{view_key}.webm") and os.stat(f"./tw-cache/{view_key}.webm").st_size > 1024 * 1024 * 24: # 24 MiB
+            if os.path.exists(f"./tw-cache/{view_key}.webm") and os.stat(f"./tw-cache/{view_key}.webm").st_size > 1024 * 1024 * 20: # 20 MiB
                 proc.send_signal(signal.SIGKILL)
                 if stream_loop and int(stream_loop[1]) > 1:
                     stream_loop[1] -= 1
@@ -197,7 +197,7 @@ async def get_video(data, url):
                 await asyncio.sleep(0.5)
             await asyncio.sleep(0.1)
         os.remove(f"./tw-cache/{view_key}.mp4")
-    if os.stat(f"./tw-cache/{view_key}.webm").st_size > 1024 * 1024 * 24:
+    if os.stat(f"./tw-cache/{view_key}.webm").st_size > 1024 * 1024 * 20:
         return data["includes"]["media"][0]["preview_image_url"]
 
     return f"./tw-cache/{view_key}.webm"
