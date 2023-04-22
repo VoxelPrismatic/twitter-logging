@@ -1,3 +1,19 @@
+# NOTICE OF DEPRECATION
+---
+---
+Thanks to the crackdown of bots on Twitter, you must now pay $100/mo to use this tool.
+
+I am not comfortable paying that much to use literally 8% of the API, so this project will be 
+archived until either:
+1. I finally get around to making it scrape the website
+2. There is a lower tier, say $10/mo, which has access to the `/2/tweets/:id` and `/2/users
+/:id/tweets` endpoints.
+
+Until then, no updates anymore. Sorry about that
+
+---
+---
+
 # This bot
 A mostly self contained discord bot which can log Twitter accounts into any channel.
 
